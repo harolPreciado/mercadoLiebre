@@ -1,0 +1,205 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto';
+}
+/*---->HEADER<----*/
+.mainHeader{
+    background-color: #eac926;
+    padding: 20px;
+}
+.logotipo{
+    display: block;
+    text-align: center;
+    margin: auto;
+    width: 60%;
+}
+.search{
+    background-color: white;
+    border: rgb(56, 56, 56);
+    width: 400px;
+    height: 35px;
+    padding: 5px;
+    font-size: 20px;
+    color: gray;
+    overflow: hidden;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.bottonSearch{
+    background-color: rgb(255, 255, 255);
+    display: block;
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    margin-left: 10px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid black;
+    border-radius: 5px;
+
+}
+.Busqueda{
+    display: flex;
+    justify-content: center;
+    margin:auto;
+    align-items: center;
+    margin-top: 20px;
+
+}
+.headerTopBarText{
+    font-weight: 400;
+    text-align: center;
+}
+
+.buttonHamburger{
+    background-color: rgb(0, 0, 83);
+    color: white;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+}
+
+.headerNavBar{
+    display: none;
+}
+
+.headerNavBar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.headerNavBar a{
+    text-decoration: none;
+    color: rgb(36, 36, 36);
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+}
+
+.sectionBanner div{
+    margin:0;
+}
+.banner{
+    width: 100%;
+}
+
+/*---->MAIN<----*/
+main{
+    width: 100%;
+    background-color: #ebebeb;
+    margin: auto;
+}
+h3{
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #666;
+}
+
+p{
+    font-size: 12px;
+}
+
+.precio{
+    font-size: 18px;
+    margin:0%;
+}
+
+.descuento{
+    font-size: 16px;
+    font-weight: normal;
+    margin:0%;
+}
+.descripcion{
+    font-size: 16px;
+    color: #666;
+}
+
+main section article{
+    background-color: #fff;
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    box-shadow: 5px 5px 5px 0px rgba(168,168,168,1);;
+}
+
+main section article img{
+    width: 100%;
+}
+
+main section article i, .descuento{
+    color: #39b54a;
+}
+
+article div i{
+    width: 30px;
+    height: 30px;
+    border-radius: 150px;
+    border: 1px solid rgb(180, 180, 180);
+    padding: 5px 0 0 5px;
+}
+
+main section article div{
+    padding-left: 10px;
+}
+
+
+
+
+
+/*--->TABLET<---*/
+@media (min-width: 768px){
+    .logotipo{
+        width: 200px;
+    }
+
+    .mainHeaderTopBar{
+        display: flex;
+        justify-content: space-between;
+
+    }
+    .Busqueda{
+        width: 30%;
+        margin: 0 0 0 20px;
+
+    }
+    .headerTopBarText{
+        width: 350px;
+        text-align: right;
+    }
+
+    .buttonHamburger{
+        display: none;
+    }
+
+    .headerNavBar{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .headerNavBar ul {
+        display: flex;
+    }
+    .headerNavBar li {
+        margin: 0 5px;
+    }
+
+    main section{
+        display: flex;
+        margin-right: 20px;
+    }
+
+    main section article{
+        margin-left: 10px;
+    }
+}
