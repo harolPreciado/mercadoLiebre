@@ -127,7 +127,7 @@ p{
 
 main section article{
     background-color: #fff;
-    width: 90%;
+    width: 70%;
     margin: auto;
     margin-top: 10px;
     box-shadow: 5px 5px 5px 0px rgba(168,168,168,1);
@@ -156,7 +156,7 @@ main section article div{
 
 /*---->FOOTER<----*/
 footer{
-    padding-top: 20px;
+    padding-top: 10px;
     background-color: #eac926;
 }
 footer section p, footer section h4{
@@ -165,7 +165,7 @@ footer section p, footer section h4{
 }
 
 footer section{
-    margin: 5px;
+    padding-top: 10px;
 }
 
 
@@ -212,10 +212,16 @@ footer section{
 
     main section{
         display: flex;
-        margin-right: 20px;
+        padding-right: 20px;
+        padding-left: 20px;
     }
 
     main section article{
         margin-left: 10px;
+        width: 22%;
+    }
+
+    footer{
+        padding-left: 10px;
     }
 }
