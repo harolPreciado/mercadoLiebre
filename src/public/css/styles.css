@@ -1,5 +1,7 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 body{
     margin: 0px;
@@ -12,10 +14,9 @@ body{
     padding: 20px;
 }
 .logotipo{
-    display: block;
-    text-align: center;
-    margin: auto;
     width: 60%;
+    display: flex;
+    margin: auto;
 }
 .search{
     background-color: white;
@@ -53,6 +54,7 @@ body{
 .headerTopBarText{
     font-weight: 400;
     text-align: center;
+    font-size: 20px;
 }
 
 .buttonHamburger{
@@ -85,9 +87,6 @@ body{
     font-size: 17px;
 }
 
-.sectionBanner div{
-    margin:0;
-}
 .banner{
     width: 100%;
 }
@@ -97,10 +96,11 @@ main{
     width: 100%;
     background-color: #ebebeb;
     margin: auto;
+    padding-bottom: 20px;
 }
 h3{
     font-size: 24px;
-    margin: 0;
+    margin: 10px;
     padding: 0;
     text-align: center;
     color: #666;
@@ -130,7 +130,8 @@ main section article{
     width: 90%;
     margin: auto;
     margin-top: 10px;
-    box-shadow: 5px 5px 5px 0px rgba(168,168,168,1);;
+    box-shadow: 5px 5px 5px 0px rgba(168,168,168,1);
+    border-radius: 5px 5px 5px 5px;
 }
 
 main section article img{
@@ -153,6 +154,19 @@ main section article div{
     padding-left: 10px;
 }
 
+/*---->FOOTER<----*/
+footer{
+    padding-top: 20px;
+    background-color: #eac926;
+}
+footer section p, footer section h4{
+    margin: 0;
+    padding: 0;
+}
+
+footer section{
+    margin: 5px;
+}
 
 
 
@@ -160,7 +174,9 @@ main section article div{
 /*--->TABLET<---*/
 @media (min-width: 768px){
     .logotipo{
+        display: block;
         width: 200px;
+        margin: 0;
     }
 
     .mainHeaderTopBar{
@@ -169,13 +185,12 @@ main section article div{
 
     }
     .Busqueda{
-        width: 30%;
-        margin: 0 0 0 20px;
-
+        width: 40%;
     }
     .headerTopBarText{
         width: 350px;
         text-align: right;
+        font-size: 25px;
     }
 
     .buttonHamburger{
@@ -189,6 +204,7 @@ main section article div{
 
     .headerNavBar ul {
         display: flex;
+        margin-top: 8px;
     }
     .headerNavBar li {
         margin: 0 5px;
