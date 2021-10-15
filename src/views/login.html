@@ -17,7 +17,9 @@
             <img src="./images/logo-mercado-liebre.svg" class="logotipo">
             <div class="Busqueda">
                 <div class="cuadroSearch">
-                    <input type="text" name="buscar" value="Buscar productos, marcas y más" class="search"> 
+                    <form action="" method="">
+                        <input type="text" name="buscar" value="Buscar productos, marcas y más" class="search">
+                    </form>
                 </div>
                 <div class="bottonSearch">
                     <i class="fa fa-search"></i>
@@ -51,13 +53,13 @@
             <label>
                 <div>
                     <p>Nombre</p>
-                    <input type="text" value="" name="firstName">
+                    <input type="text" value="" name="firstName" pattern="[A-Za-z]{1,15}" title="Por favor, ingrese un nombre válido" required>
                 </div>
             </label>
             <label>
                 <div>
                     <p>Apellido</p>
-                    <input type="text" value="" name="secondName">
+                    <input type="text" value="" name="secondName" pattern="[A-Za-z]{1,15}" title="Por favor, ingrese un apellido válido" required>
                 </div>
             </label>
             <div><label>Departamento</label>
@@ -101,13 +103,14 @@
             <label>
                 <div>
                     <p>E-mail</p>
-                    <input type="email" value="" name="email">
+                    <input type="email" value="" name="email" required>
                 </div>
             </label>
             <label>
                 <div>
                     <p>Contraseña</p>
-                    <input type="password" value="" name="password">
+                    <input type="password" value="" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                    title="Debe contener al menos, un número, una mayúscula, una minúscula. Mínimo 8 caracteres" required>
                 </div>
             </label>
             <div class="botonContinuar">

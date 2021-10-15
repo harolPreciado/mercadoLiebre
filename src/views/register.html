@@ -17,7 +17,9 @@
             <img src="./images/logo-mercado-liebre.svg" class="logotipo">
             <div class="Busqueda">
                 <div class="cuadroSearch">
-                    <input type="text" name="buscar" value="Buscar productos, marcas y más" class="search"> 
+                    <form action="" method="">
+                        <input type="text" name="buscar" value="Buscar productos, marcas y más" class="search">
+                    </form>
                 </div>
                 <div class="bottonSearch">
                     <i class="fa fa-search"></i>
@@ -51,36 +53,36 @@
             <label>
                 <div>
                     <p>Nombre y apellido</p>
-                    <input type="text" value="" name="firstName" class="form">
+                    <input type="text" value="" name="firstName" class="form" pattern="[A-Za-z]{1,15}" title="Por favor, ingrese un nombre válido" required>
                 </div>
             </label>
             <label>
                 <div>
                     <p>Nombre de usuario</p>
-                    <input type="text" value="" name="secondName" class="form">
+                    <input type="text" value="" name="secondName" class="form" pattern="[A-Za-z]{1,8}" title="Por favor, ingrese un nombre de máximo 8 letras" required>
                 </div>
             </label>
             <label>
                 <div>
                     <p>Fecha de nacimiento</p>
-                    <input type="date" value="fechaNacimiento" name="fechaNacimiento" class="form">
+                    <input type="date" value="fechaNacimiento" name="fechaNacimiento" class="form" required>
                 </div>
             </label>
             <label>
                 <div>
                     <p>Domicilio</p>
-                    <input type="text" value="" name="fechaNacimiento" class="form">
+                    <input type="text" value="" name="fechaNacimiento" class="form" required>
                 </div>
             </label>
             <div>
                 <p>Perfil del usuario</p>
                 <div class="perfil">
-                  <label>
-                    <input type="radio" value="comprar" name="perfil"> Comprador</label>
                     <label>
-                    <input type="radio" value="vender" name="perfil"> Vendedor</label>  
+                        <input type="radio" value="comprar" name="perfil" required> Comprador</label>
+                    <label>
+                        <input type="radio" value="vender" name="perfil"> Vendedor</label>
                 </div>
-                
+
             </div>
             <div>
                 <p>Categorías de interés</p>
@@ -92,29 +94,37 @@
             </div>
             </label>
             <label>
-                <div >
+                <div>
                     <p>Foto de perfil</p>
-                    <input type="file" value="" name="avatar" accept=".jpg .png" class="foto">
+                    <input type="file" value="" name="avatar" accept=".jpg .png" class="foto" >
                 </div>
             </label>
             <label>
                 <div class="form">
                     <p>E-mail</p>
-                    <input type="email" value="" name="email" class="form">
+                    <input type="email" value="" name="email" class="form" required>
                 </div>
             </label>
             <label>
                 <div class="form">
                     <p>Contraseña</p>
-                    <input type="password" value="" name="password" class="form">
+                    <input type="password" value="" name="password" class="form" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                    title="Debe contener al menos, un número, una mayúscula, una minúscula. Mínimo 8 caracteres" required>
+                </div>
+            </label>
+            <label>
+                <div class="form">
+                    <p>Confirma tu contraseña</p>
+                    <input type="password" value="" name="password" class="form" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                    title="Debe contener al menos, un número, una mayúscula, una minúscula. Mínimo 8 caracteres" required>
                 </div>
             </label>
             <div class="botonesLogin">
                 <div class="botonEnviar">
-                    <button type="submit" name="enviar" value="continuar">Enviar</button>
+                    <button type="submit" name="enviar" value="enviar">Enviar</button>
                 </div>
                 <div class="botonCancelar">
-                    <button type="reset" name="volver" value="continuar">Cancelar</button>
+                    <button type="reset" name="volver" value="Cancelar">Cancelar</button>
                 </div>
             </div>
         </form>
