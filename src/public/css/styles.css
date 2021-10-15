@@ -11,17 +11,25 @@ body{
 /*---->HEADER<----*/
 .mainHeader{
     background-color: #eac926;
-    padding: 20px;
+    padding: 10px;
+}
+.mainHeaderTopBar{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
 }
 .logotipo{
     width: 60%;
     display: flex;
     margin: auto;
 }
+.Busqueda .cuadroSearch{
+    width: 80%;
+}
 .search{
     background-color: white;
     border: rgb(56, 56, 56);
-    width: 400px;
+    width: 100%;
     height: 35px;
     padding: 5px;
     font-size: 20px;
@@ -36,7 +44,7 @@ body{
     width: 35px;
     height: 35px;
     padding: 5px;
-    margin-left: 10px;
+    margin-left: 3px;
     text-align: center;
     font-size: 18px;
     border: 1px solid black;
@@ -48,8 +56,7 @@ body{
     justify-content: center;
     margin:auto;
     align-items: center;
-    margin-top: 20px;
-
+    margin: 0px 0px 0px 10px;
 }
 .headerTopBarText{
     font-weight: 400;
@@ -77,6 +84,10 @@ body{
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+.headerNavBar .navBarRight li a i{
+    margin-left: 5px;
 }
 
 .headerNavBar a{
@@ -141,13 +152,18 @@ main section article img{
 main section article i, .descuento{
     color: #39b54a;
 }
-
+article div{
+    position: relative;
+}
 article div i{
     width: 30px;
     height: 30px;
     border-radius: 150px;
     border: 1px solid rgb(180, 180, 180);
     padding: 5px 0 0 5px;
+    position: absolute;
+    right: 15%;
+    top: -20
 }
 
 main section article div{
@@ -168,7 +184,85 @@ footer section{
     padding-top: 10px;
 }
 
+/* ---> REGISTER <---*/
+.registroForm div .perfil label{
+    width: 60%;
+    font-size: 18px;
+}
+.registroForm div .perfil{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
 
+.registroForm div label{
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+.registroForm div label input{
+    width: 20px;
+    height: 20px;
+}
+
+.registroForm label div input{
+    font-size: 16px;
+}
+
+.registroForm .botonesLogin{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.registroForm .botonEnviar, .registroForm .botonCancelar{
+    width: 40%;
+    border: none;
+}
+
+
+/* ---> LOGIN <--- */
+.loginForm, .registroForm{
+    background-color:#fff;
+    width: 85%;
+    margin: auto;
+    margin-bottom: 3%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 7px;
+}
+
+.titulo{
+    padding:20px 0px;
+    margin: 0;
+}
+.loginForm div, .registroForm div{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.loginForm div p, .loginForm div label, .registroForm div p{
+    font-size: 18px;
+    color: rgb(73, 73, 73);
+}
+
+.loginForm div input, .loginForm div select, .registroForm div .form{
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid gray;
+    font-size: 18px;
+    background-color: white;
+}
+
+.botonContinuar button, .botonEnviar button, .botonCancelar button{
+    height: 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: rgb(38, 38, 247);
+    color: white;
+}
 
 
 /*--->TABLET<---*/
@@ -181,11 +275,15 @@ footer section{
 
     .mainHeaderTopBar{
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
 
     }
+    .Busqueda .cuadroSearch{
+        width: 80%;
+    }
     .Busqueda{
-        width: 40%;
+        width: 60%;
     }
     .headerTopBarText{
         width: 350px;
@@ -224,4 +322,17 @@ footer section{
     footer{
         padding-left: 10px;
     }
+
+/* REGISTER */
+.registroForm div .perfil label{
+    width: 30%;
+    font-size: 18px;
+}
+
+.loginForm, .registroForm{
+    width: 60%;
+}
+.registroForm div .perfil{
+    justify-content: flex-start;
+}
 }

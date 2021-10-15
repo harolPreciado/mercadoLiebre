@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mercado Liebre</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/8f0026c7cf.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="mainHeader">
+        <div class="mainHeaderTopBar">
+            <img src="./images/logo-mercado-liebre.svg" class="logotipo">
+            <div class="Busqueda">
+                <div class="cuadroSearch">
+                    <input type="text" name="buscar" value="Buscar productos, marcas y más" class="search"> 
+                </div>
+                <div class="bottonSearch">
+                    <i class="fa fa-search"></i>
+                </div>
+            </div>
+            <h2 class="headerTopBarText">
+                <i class="fas fa-hand-holding-usd"></i>
+                Comprá en cuotas y sin tarjetas de crédito
+            </h2>
+        </div>
+        <a href="#" class="buttonHamburger">
+            <i class="fas fa-bars"></i>
+        </a>
+        <nav class="headerNavBar">
+            <ul class="navBarLeft">
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+            <ul class="navBarRight">
+                <li><a href="/register">Crea tu cuenta<i class="far fa-id-card"></i> </i></a></li>
+                <li><a href="/login">Ingresa<i class="fas fa-sign-in-alt"></i> </a></li>
+                <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i> </a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h3 class="titulo">Registrate</h3>
+        <form class="registroForm" name="registroForm" method="POST" action="">
+            <label>
+                <div>
+                    <p>Nombre y apellido</p>
+                    <input type="text" value="" name="firstName" class="form">
+                </div>
+            </label>
+            <label>
+                <div>
+                    <p>Nombre de usuario</p>
+                    <input type="text" value="" name="secondName" class="form">
+                </div>
+            </label>
+            <label>
+                <div>
+                    <p>Fecha de nacimiento</p>
+                    <input type="date" value="fechaNacimiento" name="fechaNacimiento" class="form">
+                </div>
+            </label>
+            <label>
+                <div>
+                    <p>Domicilio</p>
+                    <input type="text" value="" name="fechaNacimiento" class="form">
+                </div>
+            </label>
+            <div>
+                <p>Perfil del usuario</p>
+                <div class="perfil">
+                  <label>
+                    <input type="radio" value="comprar" name="perfil"> Comprador</label>
+                    <label>
+                    <input type="radio" value="vender" name="perfil"> Vendedor</label>  
+                </div>
+                
+            </div>
+            <div>
+                <p>Categorías de interés</p>
+                <label><input type="checkbox" name="categoria" value="electro"> Electro</label>
+                <label><input type="checkbox" name="categoria" value="moda"> Moda</label>
+                <label><input type="checkbox" name="categoria" value="hogar"> Hogar</label>
+                <label><input type="checkbox" name="categoria" value="jugueteria"> Juguetería</label>
+                <label><input type="checkbox" name="categoria" value="vida"> Vida Sana</label>
+            </div>
+            </label>
+            <label>
+                <div >
+                    <p>Foto de perfil</p>
+                    <input type="file" value="" name="avatar" accept=".jpg .png" class="foto">
+                </div>
+            </label>
+            <label>
+                <div class="form">
+                    <p>E-mail</p>
+                    <input type="email" value="" name="email" class="form">
+                </div>
+            </label>
+            <label>
+                <div class="form">
+                    <p>Contraseña</p>
+                    <input type="password" value="" name="password" class="form">
+                </div>
+            </label>
+            <div class="botonesLogin">
+                <div class="botonEnviar">
+                    <button type="submit" name="enviar" value="continuar">Enviar</button>
+                </div>
+                <div class="botonCancelar">
+                    <button type="reset" name="volver" value="continuar">Cancelar</button>
+                </div>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
