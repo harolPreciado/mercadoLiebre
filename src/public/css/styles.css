@@ -12,6 +12,10 @@ body{
 .mainHeader{
     background-color: #eac926;
     padding: 10px;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 10;
 }
 .mainHeaderTopBar{
     display: flex;
@@ -108,6 +112,7 @@ main{
     background-color: #ebebeb;
     margin: auto;
     padding-bottom: 20px;
+    margin-top: 200px;
 }
 h3{
     font-size: 24px;
@@ -134,23 +139,35 @@ p{
 .descripcion{
     font-size: 16px;
     color: #666;
+    visibility: hidden;
 }
+
 
 main section article{
     background-color: #fff;
     width: 70%;
     margin: auto;
     margin-top: 10px;
-    box-shadow: 5px 5px 5px 0px rgba(168,168,168,1);
     border-radius: 5px 5px 5px 5px;
 }
 
 main section article img{
     width: 100%;
 }
+main section :hover{
+    box-shadow: 5px 5px 5px 0px rgba(168,168,168,1);
+}
+article :hover .descripcion{
+    visibility: visible;
+}
 
 main section article i, .descuento{
     color: #39b54a;
+}
+
+main section article i.fas.fa-truck:hover{
+    transition: all 450ms;
+    transform: rotate(-0.25turn);
 }
 article div{
     position: relative;
@@ -204,6 +221,10 @@ footer section{
 #pie i{
     font-size: 50px;
     color: #eac926;
+}
+
+#pie i:hover{
+    color: rgb(1, 71, 1);
 }
 
 #copyright{
@@ -290,6 +311,9 @@ footer section{
     color: white;
 }
 
+.botonContinuar button:hover{
+    background-color: #0022AA;
+}
 
 /*--->TABLET<---*/
 @media (min-width: 768px){
@@ -332,6 +356,9 @@ footer section{
     }
     .headerNavBar li {
         margin: 0 5px;
+    }
+    main{
+        margin-top: 118px;
     }
 
     main section{
