@@ -1,15 +1,18 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     margin: 0px;
     padding: 0px;
     font-family: 'Roboto';
 }
+
 /*---->HEADER<----*/
-.mainHeader{
+
+.mainHeader {
     background-color: #eac926;
     padding: 10px;
     position: fixed;
@@ -17,20 +20,24 @@ body{
     top: 0;
     z-index: 10;
 }
-.mainHeaderTopBar{
+
+.mainHeaderTopBar {
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
 }
-.logotipo{
+
+.logotipo {
     width: 60%;
     display: flex;
     margin: auto;
 }
-.Busqueda .cuadroSearch{
+
+.Busqueda .cuadroSearch {
     width: 80%;
 }
-.search{
+
+.search {
     background-color: white;
     border: rgb(56, 56, 56);
     width: 100%;
@@ -42,7 +49,8 @@ body{
     border: 1px solid black;
     border-radius: 5px;
 }
-.bottonSearch{
+
+.bottonSearch {
     background-color: rgb(255, 255, 255);
     display: block;
     width: 35px;
@@ -53,22 +61,23 @@ body{
     font-size: 18px;
     border: 1px solid black;
     border-radius: 5px;
-
 }
-.Busqueda{
+
+.Busqueda {
     display: flex;
     justify-content: center;
-    margin:auto;
+    margin: auto;
     align-items: center;
     margin: 0px 0px 0px 10px;
 }
-.headerTopBarText{
+
+.headerTopBarText {
     font-weight: 400;
     text-align: center;
     font-size: 20px;
 }
 
-.buttonHamburger{
+.buttonHamburger {
     background-color: rgb(0, 0, 83);
     color: white;
     display: block;
@@ -80,21 +89,21 @@ body{
     margin: auto;
 }
 
-.headerNavBar{
+.headerNavBar {
     display: none;
 }
 
-.headerNavBar ul{
+.headerNavBar ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.headerNavBar .navBarRight li a i{
+.headerNavBar .navBarRight li a i {
     margin-left: 5px;
 }
 
-.headerNavBar a{
+.headerNavBar a {
     text-decoration: none;
     color: rgb(36, 36, 36);
     display: inline-block;
@@ -102,19 +111,21 @@ body{
     font-size: 17px;
 }
 
-.banner{
+.banner {
     width: 100%;
 }
 
 /*---->MAIN<----*/
-main{
+
+main {
     width: 100%;
     background-color: #ebebeb;
     margin: auto;
     padding-bottom: 20px;
     margin-top: 200px;
 }
-h3{
+
+h3 {
     font-size: 24px;
     margin: 10px;
     padding: 0;
@@ -122,28 +133,32 @@ h3{
     color: #666;
 }
 
-p{
+p {
     font-size: 12px;
 }
 
-.precio{
+.precio {
     font-size: 18px;
-    margin:0%;
+    margin: 0%;
 }
 
-.descuento{
+.descuento {
     font-size: 16px;
     font-weight: normal;
-    margin:0%;
+    margin: 0%;
 }
-.descripcion{
+
+.descripcion {
     font-size: 16px;
     color: #666;
-    visibility: hidden;
+    visibility: collapse;
+}
+main section article :hover .descripcion {
+    visibility: visible;
+    transition-property: opacity;
 }
 
-
-main section article{
+main section article {
     background-color: #fff;
     width: 70%;
     margin: auto;
@@ -151,126 +166,131 @@ main section article{
     border-radius: 5px 5px 5px 5px;
 }
 
-main section article img{
+main section article img {
     width: 100%;
 }
-main section :hover{
-    box-shadow: 5px 5px 5px 0px rgba(168,168,168,1);
-}
-article :hover .descripcion{
-    visibility: visible;
+
+main section article:hover {
+    box-shadow: 5px 5px 5px 0px rgba(168, 168, 168, 1);
+    transition: all 450ms;
 }
 
-main section article i, .descuento{
+main section article i, .descuento {
     color: #39b54a;
 }
 
-main section article i.fas.fa-truck:hover{
-    transition: all 450ms;
+main section article i.fas.fa-truck:hover {
+    transition: all 1s;
     transform: rotate(-0.25turn);
 }
-article div{
+
+article div {
     position: relative;
 }
-article div i{
+
+article div i {
     width: 30px;
     height: 30px;
     border-radius: 150px;
     border: 1px solid rgb(180, 180, 180);
     padding: 5px 0 0 5px;
     position: absolute;
-    right: 15%;
-    top: -20
+    right: 10%;
+    top: -20px;
 }
 
-main section article div{
+main section article div {
     padding-left: 10px;
 }
 
 /*---->FOOTER<----*/
-footer{
+
+footer {
     padding-top: 10px;
     background-color: white;
 }
-footer section p, footer section h4{
+
+footer section p, footer section h4 {
     margin: 0;
     padding: 0;
 }
 
-footer section{
+footer section {
     padding-top: 10px;
 }
 
-#pie section{
+#pie section {
     text-align: center;
 }
 
-#pie h4{
-    color:rgb(36, 36, 36);
+#pie h4 {
+    color: rgb(36, 36, 36);
     font-size: 20px;
     font-weight: 100px;
     padding: 5px;
 }
 
-#pie p{
+#pie p {
     font-size: 16px;
     color: rgb(105, 105, 105);
     padding: 3px;
 }
 
-#pie i{
+#pie i {
     font-size: 50px;
     color: #eac926;
 }
 
-#pie i:hover{
+#pie i:hover {
     color: rgb(1, 71, 1);
 }
 
-#copyright{
+#copyright {
     text-align: center;
 }
 
 /* ---> REGISTER <---*/
-.registroForm div .perfil label{
+
+.registroForm div .perfil label {
     width: 60%;
     font-size: 18px;
 }
-.registroForm div .perfil{
+
+.registroForm div .perfil {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 
-.registroForm div label{
+.registroForm div label {
     font-size: 18px;
     vertical-align: middle;
 }
 
-.registroForm div label input{
+.registroForm div label input {
     width: 20px;
     height: 20px;
 }
 
-.registroForm label div input{
+.registroForm label div input {
     font-size: 16px;
 }
 
-.registroForm .botonesLogin{
+.registroForm .botonesLogin {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 
-.registroForm .botonEnviar, .registroForm .botonCancelar{
+.registroForm .botonEnviar, .registroForm .botonCancelar {
     width: 40%;
     border: none;
 }
 
-
 /* ---> LOGIN <--- */
-.loginForm, .registroForm{
-    background-color:#fff;
+
+.loginForm, .registroForm {
+    background-color: #fff;
     width: 85%;
     margin: auto;
     margin-bottom: 3%;
@@ -280,22 +300,23 @@ footer section{
     border-radius: 7px;
 }
 
-.titulo{
-    padding:20px 0px;
+.titulo {
+    padding: 20px 0px;
     margin: 0;
 }
-.loginForm div, .registroForm div{
+
+.loginForm div, .registroForm div {
     display: flex;
     flex-direction: column;
     padding: 5px;
 }
 
-.loginForm div p, .loginForm div label, .registroForm div p{
+.loginForm div p, .loginForm div label, .registroForm div p {
     font-size: 18px;
     color: rgb(73, 73, 73);
 }
 
-.loginForm div input, .loginForm div select, .registroForm div .form{
+.loginForm div input, .loginForm div select, .registroForm div .form {
     height: 40px;
     border: none;
     border-bottom: 1px solid gray;
@@ -303,7 +324,7 @@ footer section{
     background-color: white;
 }
 
-.botonContinuar button, .botonEnviar button, .botonCancelar button{
+.botonContinuar button, .botonEnviar button, .botonCancelar button {
     height: 40px;
     border-radius: 10px;
     font-size: 20px;
@@ -311,45 +332,51 @@ footer section{
     color: white;
 }
 
-.botonContinuar button:hover{
+.botonContinuar button:hover {
     background-color: #0022AA;
 }
 
 /*--->TABLET<---*/
-@media (min-width: 768px){
-    .logotipo{
+@media (min-width: 481px) {
+    main section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    main section article {
+        width: 40%;
+    }
+}
+/*--->PC<---*/
+@media (min-width: 768px) {
+    .logotipo {
         display: block;
         width: 200px;
         margin: 0;
     }
-
-    .mainHeaderTopBar{
+    .mainHeaderTopBar {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-
     }
-    .Busqueda .cuadroSearch{
+    .Busqueda .cuadroSearch {
         width: 80%;
     }
-    .Busqueda{
+    .Busqueda {
         width: 60%;
     }
-    .headerTopBarText{
+    .headerTopBarText {
         width: 350px;
         text-align: right;
         font-size: 25px;
     }
-
-    .buttonHamburger{
+    .buttonHamburger {
         display: none;
     }
-
-    .headerNavBar{
+    .headerNavBar {
         display: flex;
         justify-content: space-between;
     }
-
     .headerNavBar ul {
         display: flex;
         margin-top: 8px;
@@ -357,41 +384,34 @@ footer section{
     .headerNavBar li {
         margin: 0 5px;
     }
-    main{
+    main {
         margin-top: 118px;
     }
-
-    main section{
+    main section {
         display: flex;
         padding-right: 20px;
         padding-left: 20px;
     }
-
-    main section article{
+    main section article {
         margin-left: 10px;
         width: 22%;
     }
-
-    footer{
+    footer {
         padding-left: 10px;
     }
-
-    #pie{
+    #pie {
         display: flex;
         flex-direction: row;
     }
-    
-
-/* REGISTER */
-.registroForm div .perfil label{
-    width: 30%;
-    font-size: 18px;
-}
-
-.loginForm, .registroForm{
-    width: 60%;
-}
-.registroForm div .perfil{
-    justify-content: flex-start;
-}
+    /* REGISTER */
+    .registroForm div .perfil label {
+        width: 30%;
+        font-size: 18px;
+    }
+    .loginForm, .registroForm {
+        width: 60%;
+    }
+    .registroForm div .perfil {
+        justify-content: flex-start;
+    }
 }
