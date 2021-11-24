@@ -49,17 +49,17 @@
     </header>
     <main>
         <h3 class="titulo">Registrate</h3>
-        <form class="registroForm" name="registroForm" method="POST" action="">
+        <form class="registroForm" method="post" action="/register">
             <label>
                 <div>
                     <p>Nombre y apellido</p>
-                    <input type="text" value="" name="firstName" class="form" pattern="[A-Za-z]{1,15}" title="Por favor, ingrese un nombre válido" required>
+                    <input type="text" value="" name="nombre" class="form" pattern="[A-Za-z]{1,15}" title="Por favor, ingrese un nombre válido" required>
                 </div>
             </label>
             <label>
                 <div>
                     <p>Nombre de usuario</p>
-                    <input type="text" value="" name="secondName" class="form" pattern="[A-Za-z]{1,8}" title="Por favor, ingrese un nombre de máximo 8 letras" required>
+                    <input type="text" value="" name="apellido" class="form" pattern="[A-Za-z]{1,8}" title="Por favor, ingrese un nombre de máximo 8 letras" required>
                 </div>
             </label>
             <label>

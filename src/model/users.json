@@ -1,0 +1,43 @@
+[
+    {
+        "nombre": "Leidy",
+        "apellido": "Padilla",
+        "fechaNacimiento": [
+            "2021-11-17",
+            "Cundinamarca"
+        ],
+        "perfil": "comprar",
+        "categoria": [
+            "electro",
+            "moda"
+        ],
+        "avatar": "",
+        "email": "leidy@gmail.com",
+        "password": [
+            "12345678Aa",
+            "12345678Aa"
+        ],
+        "enviar": "enviar"
+    },
+    {
+        "nombre": "Andres",
+        "apellido": "Preciado",
+        "fechaNacimiento": [
+            "2021-11-10",
+            "Cundinamarca"
+        ],
+        "perfil": "comprar",
+        "categoria": [
+            "electro",
+            "moda",
+            "jugueteria"
+        ],
+        "avatar": "",
+        "email": "hapreciador@itc.edu.co",
+        "password": [
+            "12345678AaA",
+            "123456789aA"
+        ],
+        "enviar": "enviar"
+    }
+]

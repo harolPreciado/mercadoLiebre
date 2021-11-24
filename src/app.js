@@ -1,20 +1,17 @@
 const express=require('express');
 const path = require('path');
+//const midd = require('./middleware') 
 const app = express();
-const port = process.env.PORT || 3000
+app.use(express.static(path.join(__dirname, '../public')));
 
-app.use(express.static(path.resolve(__dirname, './public')));
+app.use(express.urlencoded({extended:false}));
+app.use(express.json());
 
-app.get('/',(req, res)=>{
-    res.sendFile(path.resolve(__dirname, "./views/home.html"));
-});
+//app.use(midd.listarUrl)  //Middelware creado para listar las URL visitadas
+app.use('/', require('./routes'))
 
-app.get('/register',(req, res)=>{
-    res.sendFile(path.resolve(__dirname, "./views/register.html"));
-});
+// Configuración EJS View Engine
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
 
-app.get('/login',(req, res)=>{
-    res.sendFile(path.resolve(__dirname, "./views/login.html"));
-});
-
-app.listen(port, () => console.log(`Server is running in port ${port}`))
+module.exports = app;
